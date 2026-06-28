@@ -1,2 +1,1 @@
-# 129hwa.github.io
-Curriculum Vitae
+# Curriculum Vitae
