@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sihwa Lee — CV</title>
+<meta content="Sihwa Lee — Data Scientist, AI Research, Statistics, Data Engineering. CV / résumé." name="description"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231A4FA0'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ESL%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#f7f8fa;
+    --panel:#ffffff;
+    --ink:#14171c;
+    --ink-soft:#33373f;
+    --grey:#5b6270;
+    --grey-light:#8b91a0;
+    --hairline:#e1e4e9;
+    --navy:#1a4fa0;
+    --navy-soft:#e9eff9;
+    --signal:#2e7d8c;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', -apple-system, sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--navy); text-decoration:none; border-bottom:1px solid transparent;}
+  a:hover{border-bottom-color:var(--navy);}
+
+  .sheet{
+    max-width:760px;
+    margin:0 auto;
+    background:var(--panel);
+    box-shadow:0 0 0 1px var(--hairline);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:64px 56px 36px;
+    text-align:center;
+    animation:rise .6s ease-out;
+  }
+  @keyframes rise{
+    from{opacity:0; transform:translateY(8px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .hero h1{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    font-size:2.4rem;
+    letter-spacing:-0.01em;
+    margin:0 0 10px;
+  }
+  .hero .role{
+    color:var(--grey);
+    font-size:1rem;
+    margin:0 0 22px;
+  }
+  .hero .role span{color:var(--grey-light); margin:0 8px;}
+
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+    color:var(--grey);
+  }
+  .contact a{color:var(--ink-soft);}
+  .contact .sep{color:var(--hairline); margin:0 12px;}
+
+  /* ---------- SECTIONS ---------- */
+  .section{
+    padding:30px 56px;
+    border-top:1px solid var(--hairline);
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:.12em;
+    color:var(--navy);
+    margin:0 0 20px;
+  }
+
+  .entry{margin-bottom:22px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .entry-title{font-weight:600; font-size:1rem; color:var(--ink);}
+  .entry-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--grey);
+    white-space:nowrap;
+  }
+  .entry-sub{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+    font-style:italic;
+    color:var(--grey);
+    font-size:0.92rem;
+    margin-top:2px;
+  }
+  .entry-loc{
+    font-family:'IBM Plex Mono', monospace;
+    font-style:normal;
+    font-size:0.78rem;
+    color:var(--grey-light);
+    white-space:nowrap;
+  }
+  .entry ul{
+    margin:10px 0 0;
+    padding-left:1.15em;
+  }
+  .entry li{margin-bottom:5px; font-size:0.93rem; color:var(--ink-soft);}
+  .entry li:last-child{margin-bottom:0;}
+  .entry li b, .entry li strong{color:var(--ink); font-weight:600;}
+
+  .heading-line{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .heading-line .left b{font-weight:600; color:var(--ink);}
+  .heading-line .left em{color:var(--grey); font-style:italic;}
+  .heading-line .right{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--grey);
+    white-space:nowrap;
+  }
+
+  .skills-grid{display:grid; gap:10px;}
+  .skills-row{font-size:0.93rem;}
+  .skills-row b{font-weight:600; color:var(--ink); margin-right:6px;}
+  .skills-row span{color:var(--ink-soft);}
+
+  footer{
+    padding:26px 56px 40px;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    color:var(--grey-light);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .hero{animation:none;}
+    *{transition:none !important;}
+  }
+
+  @media (max-width:600px){
+    .hero{padding:44px 24px 28px;}
+    .hero h1{font-size:1.9rem;}
+    .section{padding:24px 24px;}
+    .entry-sub, .entry-head, .heading-line{flex-direction:column; align-items:flex-start; gap:2px;}
+    .contact .sep{margin:0 8px;}
+    footer{padding:22px 24px 34px;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="hero">
+<h1>Sihwa Lee</h1>
+<p class="role">Data Scientist <span>·</span> AI Research <span>·</span> Statistics <span>·</span> Data Engineering</p>
+
+<div class="contact">
+<a href="mailto:dltlghk98@gmail.com">dltlghk98@gmail.com</a>
+<span class="sep">|</span>
+<a href="https://github.com/holyshhh" rel="noopener" target="_blank">github.com/holyshhh</a>
+<span class="sep">|</span>
+<span>Seoul, South Korea</span>
+</div>
+</header>
+<!-- EDUCATION -->
+<section class="section">
+<p class="eyebrow">// EDUCATION</p>
+<div class="entry">
+<div class="entry-head">
+<span class="entry-title">University of Seoul</span>
+<span class="entry-date">Sep. 2023 – Aug. 2025</span>
+</div>
+<div class="entry-sub">
+<span>M.S. in Statistics and Data Science</span>
+<span class="entry-loc">Seoul, South Korea</span>
+</div>
+<ul>
+
+<li>Thesis: <em>MISA: Mutual Information-driven Separator with Spectral Alignment</em>.</li>
+<li>Research focus: Domain Generalization, Large Language Models, and Machine Learning.</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-head">
+<span class="entry-title">Hankuk University of Foreign Studies, Global Campus</span>
+<span class="entry-date">Mar. 2018 – Aug. 2023</span>
+</div>
+<div class="entry-sub">
+<span>B.A. in Hungarian Studies; B.A. in Computer and Electronic Systems Engineering</span>
+<span class="entry-loc">Yongin, South Korea</span>
+</div>
+<ul>
+
+<li>Undergraduate thesis: <em>Exploring Key Variables in Customer Segmentation through Analysis</em>.</li>
+</ul>
+</div>
+</section>
+<!-- PUBLICATIONS -->
+<section class="section">
+<p class="eyebrow">// PUBLICATIONS</p>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>MISA: Mutual Information-driven Separator with Spectral Alignment</b> | <em>1st Author, Thesis / Preprint</em></span>
+<span class="right">2026</span>
+</div>
+
+</div>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>Multiclass Classification of Online Comments Based on Toxicity Scale</b> | <em>Co-author</em></span>
+<span class="right">2022</span>
+</div>
+
+</div>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>Exploring Key Variables in Customer Segmentation through Analysis</b> | <em>1st Author, B.S. Thesis</em></span>
+<span class="right">2022</span>
+</div>
+
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section class="section">
+<p class="eyebrow">// EXPERIENCE</p>
+<div class="entry">
+<div class="entry-head">
+<span class="entry-title">NC AI</span>
+<span class="entry-date">Sep. 2025 – Mar. 2026</span>
+</div>
+<div class="entry-sub">
+<span>AI Researcher, Data Engineering Team</span>
+<span class="entry-loc">South Korea</span>
+</div>
+
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="section">
+<p class="eyebrow">// PROJECTS</p>
+
+    <div class="entry"><div class="heading-line"><span class="left"><b>Multi-language Pretraining Data Pipeline for Foundation Model</b> | <em>World Best LLM, NC AI</em></span><span class="right">Sep. 2025 – Jan. 2026</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>Fin:AI Challenge</b> | <em>JB Financial Group Hackathon</em></span><span class="right">Jun. 2026</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>Market Sales Analytics Dashboard</b> | <em>University of Seoul</em></span><span class="right">Oct. 2023 – Dec. 2023</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>Data Youth Campus Natural Language Processing Project</b> | <em>HUFS</em></span><span class="right">Jun. 2022 – Aug. 2022</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>US-Korea Job Mapping Data Analysis using O*NET and NCS</b> | <em>Personal Project</em></span><span class="right">Jun. 2026</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>Building Local RAG System</b> | <em>Personal Project</em></span><span class="right">Jun. 2026</span></div></div>
+  
+    <div class="entry"><div class="heading-line"><span class="left"><b>Monthly Hackathon: Make It Addictive in 10 Minutes — Web Mini-Game Challenge</b> | <em>DACON</em></span><span class="right">Jun. 2026</span></div></div>
+  </section>
+<!-- TEACHING -->
+<section class="section">
+<p class="eyebrow">// TEACHING</p>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>Teaching Assistant</b>, Department of Statistics and Data Science, University of Seoul</span>
+<span class="right">Mar. 2024 – Jun. 2025</span>
+</div>
+<ul>
+<li><b>Deep Learning</b> (Mar. 2024 – Jun. 2024)</li>
+<li><b>Advanced Statistical Programming</b> (Sep. 2024 – Dec. 2024)</li>
+<li><b>Regression Analysis I</b> (Mar. 2025 – Jun. 2025)</li>
+<li><b>Introduction to Big Data II</b> (Mar. 2025 – Jun. 2025)</li>
+</ul>
+</div>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>Coordinator</b>, Department of Statistics and Data Science, University of Seoul</span>
+<span class="right">Sep. 2024 – Oct. 2024</span>
+</div>
+<ul>
+<li><b>Data Analysis Competition</b></li>
+</ul>
+</div>
+</section>
+<!-- AWARDS -->
+<section class="section">
+<p class="eyebrow">// AWARDS</p>
+<div class="entry">
+<div class="heading-line">
+<span class="left"><b>Creativity Award</b>, 2024 K-Data Science Hackathon</span>
+<span class="right">Nov. 2024</span>
+</div>
+
+</div>
+</section>
+<!-- CERTIFICATIONS -->
+<section class="section">
+<p class="eyebrow">// CERTIFICATIONS</p>
+<div class="entry" style="display:grid; gap:10px;">
+<div class="heading-line"><span class="left"><b>SQL Developer (SQLD)</b>, Korea Data Agency</span><span class="right">Jun. 2026</span></div>
+<div class="heading-line"><span class="left"><b>Google Analytics Certification</b>, Google</span><span class="right">May. 2026</span></div>
+<div class="heading-line"><span class="left"><b>TOEIC Speaking IH</b>, ETS</span><span class="right">Mar. 2025</span></div>
+<div class="heading-line"><span class="left"><b>Advanced Data Analytics Semi-Professional (ADsP)</b>, Korea Data Agency</span><span class="right">Nov. 2022</span></div>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="section">
+<p class="eyebrow">// SKILLS</p>
+<div class="skills-grid">
+<div class="skills-row"><b>Programming</b><span>Python, MySQL, PostgreSQL, R, JavaScript</span></div>
+<div class="skills-row"><b>Machine Learning</b><span>PyTorch, Scikit-learn, Pandas, NumPy</span></div>
+<div class="skills-row"><b>Tools</b><span>Git, LaTeX, Jupyter, Google Colab</span></div>
+</div>
+</section>
+<footer>Last updated June 2026 · <a href="mailto:dltlghk98@gmail.com">dltlghk98@gmail.com</a></footer>
+</div>
+</body>
+</html>
